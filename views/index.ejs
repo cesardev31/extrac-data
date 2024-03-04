@@ -1,0 +1,22 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de datos</title>
+    <!-- Agregar enlaces a Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Análisis de datos</h1>
+    <!-- Agregar código JavaScript para crear gráficos -->
+    <canvas id="clientesPorDia"></canvas>
+    <canvas id="clientesPorMes"></canvas>
+
+    <script id="data-script" data-data="<%= JSON.stringify(data) %>"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
